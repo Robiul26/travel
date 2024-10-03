@@ -370,8 +370,15 @@
 }
 
 @media (max-width: 768px) {
+    .carousel-header .carousel-inner .carousel-item {
+        min-height: 250px;
+    }
 
-    .carousel-header .carousel-inner .carousel-item img,
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    /* .carousel-header .carousel-inner .carousel-item img,
     .carousel-header .carousel-inner .carousel-item .carousel-caption {
         height: 700px;
         margin-top: -100px;
@@ -389,7 +396,7 @@
     .search-bar {
         margin-top: -100px;
         transition: 0.5s;
-    }
+    } */
 }
 
 /*** Carousel Hero Header End ***/
