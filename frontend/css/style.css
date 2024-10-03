@@ -371,7 +371,7 @@
 
 @media (max-width: 768px) {
     .carousel-header .carousel-inner .carousel-item {
-        min-height: 250px;
+        min-height: 300px;
     }
 
     .about-section {
