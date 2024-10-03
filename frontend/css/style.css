@@ -377,6 +377,11 @@
     .about-section {
         flex-direction: column-reverse;
     }
+    .bg-breadcrumb{
+        background-attachment: inherit!important;
+        padding:inherit!important;
+    }
+ 
 
     /* .carousel-header .carousel-inner .carousel-item img,
     .carousel-header .carousel-inner .carousel-item .carousel-caption {
@@ -398,6 +403,9 @@
         transition: 0.5s;
     } */
 }
+
+
+
 
 /*** Carousel Hero Header End ***/
 
