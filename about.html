@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Travel</title>
+    <link rel="shortcut icon" href="./frontend/img/logo.png" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -41,7 +42,16 @@
     <!-- Topbar Start -->
     <div class="container-fluid bg-primary px-5  d-lg-block">
         <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start py-2 mb-lg-0">
+            <div class="col-lg-8 text-center text-lg-start py-1 mb-lg-0 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="service.html"><small class="me-3 text-light">Over Flight Permit</small></a>
+                    <a href="service.html"><small class="me-3 text-light">Landing Permit</small></a>
+                    <a href="service.html"><small class="me-3 text-light">Ground Handling</small></a>
+                    <a href="service.html"><small class="me-3 text-light">Credit Facility</small></a>
+                    <a href="service.html"><small class="me-3 text-light">Catering Service</small></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end py-1 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
                             class="fab fa-twitter fw-normal"></i></a>
@@ -55,22 +65,43 @@
                             class="fab fa-youtube fw-normal"></i></a>
                 </div>
             </div>
-            <!-- <div class="col-lg-4 text-center text-lg-end">
-            <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <a href="#"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
 
-            </div>
-        </div> -->
         </div>
     </div>
     <!-- Topbar End -->
 
+    <!-- Middlebar Start -->
+    <div class="container-fluid px-lg-5 px-2  d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 text-center text-lg-start mt-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="align-items-center d-inline-flex" href="index.html">
+                        <img class="" style="width: 60px;" src="./frontend/img/logo.png" alt="logo">
+                        <h1 class="topbar-h1 m-0 ms-2 text-primary">Falcon Airways Limited</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end py-2 mb-lg-0">
+                <div class="d-inline-flex flex-column flex-lg-row">
+                    <span class="border-end border-primary mb-2 mb-lg-0 me-lg-3 pe-3 text-primary">Email Support <br>
+                        <a class="text-primary" style="font-weight: bold;" href="">info@email.com</a>
+                    </span>
+                    <span class="border-end border-primary me-lg-3 pe-3 text-primary">Phone Support (24 Hours) <br>
+                        <a class="text-primary" style="font-weight: bold;" href="tel:01234567890">01234567890</a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Middlebar End -->
+
     <!-- Navbar  Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travel</h1>
-                <!-- <img src="./frontend/img/logo.png" alt="Logo"> -->
+    <div class="container-fluid position-relative p-0 border-top border-primary">
+        <nav class="navbar navbar-expand-lg navbar-light px-2 px-lg-5  py-lg-0">
+            <a class="navbar-brand p-0 align-items-center d-inline-flex" href="index.html">
+                <img class="" style="width: 60px;" src="./frontend/img/logo.png" alt="logo">
+                <h1 class="topbar-h1 m-0 ms-2">Falcon Airways Limited</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
@@ -105,11 +136,11 @@
     padding: 150px 0 50px 0; ">
         <div class="container text-center py-5" style="max-width: 900px;">
             <h3 class="text-white display-3 mb-4">About Us</h3>
-            <ol class="breadcrumb justify-content-center mb-0">
+            <!-- <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="#">Pages</a></li>
                 <li class="breadcrumb-item active text-white">About</li>
-            </ol>
+            </ol> -->
         </div>
     </div>
     <!-- Header End -->
@@ -118,8 +149,7 @@
     <div class="container-fluid about py-5">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-12"
-                    style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(/frontend/img/about-img-1.png);">
+                <div class="col-lg-12">
 
                     <h2 class="text-primary">Company Overview...</h2>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum,

@@ -148,6 +148,25 @@
     .topbar {
         display: none;
     }
+
+
+    .navbar-light .navbar-brand h1 {
+        display: block !important;
+        font-size: 20px !important;
+    }
+
+    .topbar-h1 {
+        font-size: 22px !important;
+    }
+
+    .sticky-top.navbar-light .navbar-brand img{
+        position: absolute;
+        left: -100px;
+    }
+}
+
+.topbar-h1 {
+    font-size: 30px;
 }
 
 /*** Topbar End ***/
@@ -157,7 +176,7 @@
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    padding: 35px 15px;
+    padding: 20px 15px;
     color: var(--bs-white) !important;
     font-size: 17px;
     font-weight: 400;
@@ -179,6 +198,14 @@
     color: var(--bs-white);
 }
 
+.navbar-light .navbar-brand img {
+    display: none !important;
+}
+
+.navbar-light .navbar-brand h1 {
+    display: none;
+}
+
 .sticky-top.navbar-light .navbar-brand h1 {
     color: var(--bs-primary);
 }
@@ -188,8 +215,12 @@
     transition: .5s;
 }
 
-.sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+.sticky-top.navbar-light .navbar-brand img{
+    display: block !important;
+}
+
+.sticky-top.navbar-light .navbar-brand h1 {
+    display: block !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -371,17 +402,18 @@
 
 @media (max-width: 768px) {
     .carousel-header .carousel-inner .carousel-item {
-        min-height: 300px;
+        min-height: 230px;
     }
 
     .about-section {
         flex-direction: column-reverse;
     }
-    .bg-breadcrumb{
-        background-attachment: inherit!important;
-        padding:inherit!important;
+
+    .bg-breadcrumb {
+        background-attachment: inherit !important;
+        padding: inherit !important;
     }
- 
+
 
     /* .carousel-header .carousel-inner .carousel-item img,
     .carousel-header .carousel-inner .carousel-item .carousel-caption {
@@ -621,6 +653,52 @@
 }
 
 /*** Packages End ***/
+
+/* Airport start carousel*/
+
+.airport .airport-carousel {
+    position: relative;
+
+}
+
+.airport .airport-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    padding: 5px 30px;
+    border: 1px solid var(--bs-primary);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.airport .airport-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 5px 30px;
+    border: 1px solid var(--bs-primary);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.airport .airport-carousel .owl-nav .owl-prev i,
+.airport .airport-carousel .owl-nav .owl-next i {
+    color: var(--bs-primary);
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+.airport .airport-carousel .owl-nav .owl-prev:hover,
+.airport .airport-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-primary);
+}
+
+.airport .airport-carousel .owl-nav .owl-prev:hover i,
+.airport .airport-carousel .owl-nav .owl-next:hover i {
+    color: var(--bs-white);
+}
+
+/* Airport end */
 
 
 /*** Explore Tour Start ***/
@@ -1225,3 +1303,17 @@
 }
 
 /*** copyright end ***/
+
+/* image animaiton */
+.animate-hover {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.animate-hover img {
+    transition: transform 0.5s;
+}
+
+.animate-hover img:hover {
+    transform: scale(1.1);
+}
