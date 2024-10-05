@@ -1291,7 +1291,8 @@
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: var(--bs-primary);
+    /* color: var(--bs-primary); */
+    color: #000000;
 }
 
 /*** Footer End ***/
@@ -1315,5 +1316,5 @@
 }
 
 .animate-hover img:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
